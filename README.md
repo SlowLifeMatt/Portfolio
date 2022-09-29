@@ -18,7 +18,7 @@ Create a personal Portfolio site that has a hamburger menu that follows the user
 
 ### Wireframes
 
-![alt text](/img/wireframe1.png)
+![](img/wireframe2.png)
 
 ### Time/Priority Matrix
 
