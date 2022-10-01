@@ -1,4 +1,5 @@
- .main-content {
+
+.main-content {
     padding-top: 300px;
     background-color: #304354;
     display: grid;
@@ -6,17 +7,40 @@
 }
 
 #greeting {
-    font-size: 30px;
+    font-size: 20px;
     color: #B0C1C2;
+    margin-bottom: -80px;
 }
 
 #name {
-    font-size: 50px;
+    font-size: 30px;
     color: #36beca;
+    margin-top: -80px;
 }
 
 #itMe {
+    font-size: 20px;
     color: #B0C1C2;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.sections {
+    text-align: center;
+}
+.containerWeather {
+    text-align: left;
+    display: inline-block;
+    border: 10px solid #000;
+    color:rgb(64, 244, 247)
+}
+#results {
+    font-size: 20px;
+}
+
+.icon {
+    max-width: 100px;
 }
 
 *{
@@ -41,7 +65,7 @@ a {
     scroll-behavior: smooth; 
 }
 
-.side-bar {
+.nav-bar {
     width: 100%;    
     position:fixed;
     align-content: center;
@@ -85,14 +109,43 @@ h1 {
   }
 
 h2 {
-    padding-bottom: 350px;
+    padding-top: 150px;
 }
 
 .active {
     color: #304354;
 }
+.contact {
+    max-width: 40px;
+}
 
-
+@media (min-width: 1025px) and (max-width: 1480px) {
+    
+    #greeting {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    
+    #name {
+        font-size: 50px;
+        margin-top: 0;
+    }
+    
+    #itMe {
+        font-size: 30px;
+        
+    }
+    
+    .icon {
+        max-width: 400px;
+    }
+    #results {
+        font-size: 50px;
+    }
+    .contact {
+        max-width: 100px;
+    }
+}
 
 
 
