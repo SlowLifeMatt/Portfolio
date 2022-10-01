@@ -1,6 +1,7 @@
-.main-content {
+ .main-content {
     padding-top: 300px;
     background-color: #304354;
+    display: grid;
 
 }
 
@@ -11,7 +12,7 @@
 
 #name {
     font-size: 50px;
-    color: #36beca
+    color: #36beca;
 }
 
 #itMe {
@@ -36,58 +37,52 @@ a {
     color: aliceblue;
 }
 
-
-* {
-    box-sizing: border-box
-}
-
-html {
-    scroll-behavior: smooth;
+ html {
+    scroll-behavior: smooth; 
 }
 
 .side-bar {
-    width: 160px;
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%;    
+    position:fixed;
+    align-content: center;
     background-color: rgb(131, 160, 181);
 }
-
-nav ul {
-    padding: 0;
-}
-
-nav li {
-    list-style: none;
-}
-
 nav li a {
+    flex: 1;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    display: block;
-    padding: 0.6 rem 0.3rem;
-    font-size: 30px;
+    font-size: 20px;
     transition: all ease-out 250ms;
+    margin: 10px
 }
 
 nav li a:hover {
     color:aquamarine;
 }
-
-.main-content {
-    margin-left: 160px;
-}
-
 section:last-of-type {
     height: 100vh;
 }
 
 h1 {
     color: rgb(64, 244, 247);
-}
+} */
+
+.fade-in-text {
+    font-family: Arial;
+    font-size: 150px;
+    animation: fadeIn 5s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .fade-in-text {
+    font-family: Arial;
+    font-size: 60px;
+    animation: fadeIn 5s;
+  }
 
 h2 {
     padding-bottom: 350px;
@@ -96,3 +91,11 @@ h2 {
 .active {
     color: #304354;
 }
+
+
+
+
+
+
+
+
