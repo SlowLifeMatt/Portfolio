@@ -1,8 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding:0;
+    font-family: "Concert One", cursive;
+}
+#clockContainer {
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    /*to make the height and width responsive*/
+    width: 40vw;
+    background: url(img/clock2.png) no-repeat;
+    /*setting our background image*/
+    background-size: 100%;
+}
+  
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: rgb(246, 198, 3);
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+#second{
+    background: rgb(1, 253, 1);
+}
+  
+#hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+}
+  
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+  
+#second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+}
+
 
 .main-content {
-    padding-top: 300px;
+    padding-top: 150px;
     background-color: #304354;
-    display: grid;
 
 }
 
@@ -23,9 +78,9 @@
     color: #B0C1C2;
     align-content: center;
     align-items: center;
-    width: 100%;
-    
+    padding-bottom: 100px;
 }
+
 .sections {
     text-align: center;
 }
@@ -43,10 +98,7 @@
     max-width: 100px;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-}
+
 
 a {
     color: #B0C1C2;
@@ -89,10 +141,9 @@ section:last-of-type {
 
 h1 {
     color: rgb(64, 244, 247);
-} */
+}
 
 .fade-in-text {
-    font-family: Arial;
     font-size: 150px;
     animation: fadeIn 5s;
   }
@@ -103,7 +154,6 @@ h1 {
   }
 
   .fade-in-text {
-    font-family: Arial;
     font-size: 60px;
     animation: fadeIn 5s;
   }
@@ -115,12 +165,20 @@ h2 {
 .active {
     color: #304354;
 }
-.contact {
+.contactIcons {
     max-width: 40px;
 }
 
-@media (min-width: 1025px) and (max-width: 1480px) {
-    
+
+@media only screen and (min-width: 768px) {
+
+  } 
+
+
+ @media (min-width: 900px) and (max-width: 1480px) {
+
+
+
     #greeting {
         font-size: 30px;
         margin-bottom: 0;
@@ -133,18 +191,21 @@ h2 {
     
     #itMe {
         font-size: 30px;
-        
+        margin-bottom: 100px;
     }
-    
+    #projects {
+        padding-top: 300px;
+    }
     .icon {
         max-width: 400px;
     }
     #results {
         font-size: 50px;
     }
-    .contact {
+    .contactIcons {
         max-width: 100px;
     }
+
 }
 
 
