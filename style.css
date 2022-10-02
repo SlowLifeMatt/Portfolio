@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
-
-
 * {
     margin: 0;
     padding:0;
@@ -57,7 +55,7 @@
 
 .main-content {
     padding-top: 150px;
-    background-color: #304354;
+    background-image: url("img/AdobeStock_513536076.jpeg");
 
 }
 
@@ -79,10 +77,13 @@
     align-content: center;
     align-items: center;
     padding-bottom: 100px;
+
 }
+
 
 .sections {
     text-align: center;
+    background-color: #304354;
 }
 .containerWeather {
     text-align: left;
@@ -159,14 +160,17 @@ h1 {
   }
 
 h2 {
-    padding-top: 150px;
+    padding-top: 250px;
 }
 
 .active {
     color: #304354;
 }
 .contactIcons {
-    max-width: 40px;
+    max-width: 70px;
+    /* display:flex;
+    flex-direction: column;
+    margin-left: 42%; */
 }
 
 
