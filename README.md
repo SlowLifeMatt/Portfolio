@@ -19,7 +19,7 @@ Create a personal Portfolio site that has a hamburger menu that follows the user
 ### Wireframes
 
 ![](img/wireframe2.png)
-
+![](img/wireframe3.png)
 ### Time/Priority Matrix
 
 #### Functional Components
