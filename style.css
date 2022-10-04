@@ -134,6 +134,10 @@ nav li a:hover {
 }
 #city {
     font-size: 20px;
+    padding: 5px;
+}
+button {
+    padding: 8px;
 }
 #results {
     font-size: 20px;
