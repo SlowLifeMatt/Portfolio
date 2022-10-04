@@ -1,10 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
-
+/* Mobile First */
 * {
     margin: 0;
     padding:0;
     font-family: "Concert One", cursive;
 }
+
+a {
+    color: #B0C1C2;
+    text-decoration: none;
+}
+
+.nav-link {
+    transition: 0.3s ease-out;
+}
+
+.nav-link:hover {
+    color: rgb(46, 141, 224);
+}
+
+ html {
+    scroll-behavior: smooth; 
+}
+
+.nav-bar {
+    width: 100%;    
+    position:fixed;
+    align-content: center;
+    background-color: rgb(131, 160, 181);
+    z-index: 99;
+}
+nav li a {
+    flex: 1;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    transition: all ease-out 250ms;
+    margin: 10px
+}
+
+nav li a:hover {
+    color:rgb(67, 253, 203);
+}
+
+.main-content {
+    padding-top: 150px;
+    background: #000;
+
+}
+
+#greeting {
+    font-size: 20px;
+    color: #B0C1C2;
+    margin-bottom: -80px;
+}
+
+#name {
+    font-size: 30px;
+    color: #36beca;
+    margin-top: -80px;
+}
+
+#itMe {
+    font-size: 20px;
+    color: #B0C1C2;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+
+}
+
 #clockContainer {
     position: relative;
     margin: auto;
@@ -52,35 +117,6 @@
     opacity: 0.8;
 }
 
-
-.main-content {
-    padding-top: 150px;
-    background-image: url("img/AdobeStock_513536076.jpeg");
-
-}
-
-#greeting {
-    font-size: 20px;
-    color: #B0C1C2;
-    margin-bottom: -80px;
-}
-
-#name {
-    font-size: 30px;
-    color: #36beca;
-    margin-top: -80px;
-}
-
-#itMe {
-    font-size: 20px;
-    color: #B0C1C2;
-    align-content: center;
-    align-items: center;
-    padding-bottom: 100px;
-
-}
-
-
 .sections {
     text-align: center;
     background-color: #304354;
@@ -99,43 +135,6 @@
     max-width: 100px;
 }
 
-
-
-a {
-    color: #B0C1C2;
-    text-decoration: none;
-}
-
-.nav-link {
-    transition: 0.3s ease-out;
-}
-
-.nav-link:hover {
-    color: aliceblue;
-}
-
- html {
-    scroll-behavior: smooth; 
-}
-
-.nav-bar {
-    width: 100%;    
-    position:fixed;
-    align-content: center;
-    background-color: rgb(131, 160, 181);
-}
-nav li a {
-    flex: 1;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    transition: all ease-out 250ms;
-    margin: 10px
-}
-
-nav li a:hover {
-    color:aquamarine;
-}
 section:last-of-type {
     height: 100vh;
 }
@@ -168,21 +167,36 @@ h2 {
 }
 .contactIcons {
     max-width: 70px;
-    /* display:flex;
-    flex-direction: column;
-    margin-left: 42%; */
 }
-
-
+/* Tablet size */
 @media only screen and (min-width: 768px) {
-
+    #greeting {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    
+    #name {
+        font-size: 40px;
+        margin-top: 0;
+    }
+    
+    #itMe {
+        font-size: 20px;
+        margin-bottom: 100px;
+    }
+    #projects {
+        padding-top: 300px;
+    }
+    .icon {
+        max-width: 400px;
+    }
+    .contactIcons {
+        max-width: 50px;
+    }
   } 
 
-
+/* Desktop size */
  @media (min-width: 900px) and (max-width: 1480px) {
-
-
-
     #greeting {
         font-size: 30px;
         margin-bottom: 0;
@@ -192,7 +206,6 @@ h2 {
         font-size: 50px;
         margin-top: 0;
     }
-    
     #itMe {
         font-size: 30px;
         margin-bottom: 100px;
@@ -203,13 +216,9 @@ h2 {
     .icon {
         max-width: 400px;
     }
-    #results {
-        font-size: 50px;
-    }
     .contactIcons {
         max-width: 100px;
     }
-
 }
 
 
