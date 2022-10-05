@@ -11,16 +11,19 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth; 
+}
+
+
+/* Top bar navigation */
+
 .nav-link {
     transition: 0.3s ease-out;
 }
 
 .nav-link:hover {
     color: rgb(46, 141, 224);
-}
-
- html {
-    scroll-behavior: smooth; 
 }
 
 .nav-bar {
@@ -31,6 +34,7 @@ a {
     background-color: rgb(131, 160, 181);
     z-index: 99;
 }
+
 nav li a {
     flex: 1;
     text-decoration: none;
@@ -43,6 +47,13 @@ nav li a {
 nav li a:hover {
     color:rgb(67, 253, 203);
 }
+
+.active {
+    color: #304354;
+}
+
+
+/* About me bio */
 
 .main-content {
     padding-top: 150px;
@@ -72,6 +83,10 @@ nav li a:hover {
 
 }
 
+
+
+/* clock animation */
+
 #clockContainer {
     position: relative;
     margin: auto;
@@ -81,6 +96,9 @@ nav li a:hover {
     background: url(img/clock2.png) no-repeat;
     /*setting our background image*/
     background-size: 100%;
+    background-color: rgb(153, 163, 164);
+    border: solid 2px rgb(205, 246, 0);
+    border-radius: 25px;
 }
   
 #hour,
@@ -90,9 +108,6 @@ nav li a:hover {
     background: rgb(246, 198, 3);
     border-radius: 10px;
     transform-origin: bottom;
-}
-#second{
-    background: rgb(1, 253, 1);
 }
   
 #hour {
@@ -117,43 +132,67 @@ nav li a:hover {
     top: 9%;
     left: 49.25%;
     opacity: 0.8;
+    background: rgb(1, 253, 1);
 }
 
 .sections {
     text-align: center;
     background-color: #304354;
 }
+
+
+
+
+/* Weather app */
+
 .containerWeather {
     text-align: left;
     display: inline-block;
     border: 10px solid #000;
-    color:rgb(64, 244, 247);
+    color:rgb(16, 227, 76);
     padding: 10px;
     margin: 10px;
     line-height: 150%;
+    border-radius: 15px 50px;
+    border-color: antiquewhite;
 }
+
+#textWeather {
+    color:rgb(0, 147, 252);
+}
+
 #city {
     font-size: 20px;
     padding: 5px;
 }
+
 button {
-    padding: 8px;
+    padding: 2px;
 }
+
 #results {
     font-size: 20px;
 }
 
+
+/* Socials and skills */
+
+
 .icon {
     max-width: 100px;
+}
+
+.contactIcons {
+    max-width: 70px;
 }
 
 section:last-of-type {
     height: 100vh;
 }
 
-h1 {
-    color: rgb(64, 244, 247);
-}
+
+
+/* Text fading in my name */
 
 .fade-in-text {
     font-size: 150px;
@@ -170,17 +209,24 @@ h1 {
     animation: fadeIn 5s;
   }
 
+h1 {
+    color: rgb(64, 244, 247);
+}
+
 h2 {
     padding-top: 250px;
     padding-bottom: 40px;
+    color:rgb(246, 198, 3)
 }
 
-.active {
-    color: #304354;
+h4 {
+    font-size: 20px;
+    margin: auto;
 }
-.contactIcons {
-    max-width: 70px;
-}
+
+
+
+
 /* Tablet size */
 @media only screen and (min-width: 768px) {
     #greeting {
@@ -197,21 +243,30 @@ h2 {
         font-size: 20px;
         margin-bottom: 100px;
     }
+
     #projects {
         padding-top: 300px;
     }
+
     .icon {
         max-width: 400px;
     }
+
     .contactIcons {
-        max-width: 50px;
+        max-width: 80px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 30px;
     }
   } 
 
 /* Desktop size */
  @media (min-width: 900px) and (max-width: 1480px) {
     #greeting {
-        font-size: 30px;
+        font-size: 40px;
         margin-bottom: 0;
     }
     
@@ -219,21 +274,68 @@ h2 {
         font-size: 50px;
         margin-top: 0;
     }
+
     #itMe {
         font-size: 30px;
         margin-bottom: 100px;
     }
+
     #projects {
         padding-top: 300px;
     }
+
     .icon {
         max-width: 400px;
     }
+
     .contactIcons {
         max-width: 100px;
     }
+
+    h2{
+        font-size: 50px;
+    }
+
+    h4 {
+        font-size: 40px;
+    }
 }
 
+/* Extra large */
+
+@media only screen and (min-width: 1481px) {
+    #greeting {
+        font-size: 40px;
+    }
+    
+    #name {
+        font-size: 50px;
+    }
+    
+    #itMe {
+        font-size: 30px;
+    }
+
+    #projects {
+        padding-top: 300px;
+    }
+
+    .icon {
+        max-width: 500px;
+    }
+
+    .contactIcons {
+        max-width: 120px;
+    }
+
+    h2{
+        font-size: 60px;
+    }
+
+    h4 {
+        font-size: 50px;
+    }
+  } 
 
 
 
