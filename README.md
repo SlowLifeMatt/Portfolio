@@ -11,7 +11,7 @@ https://slowlifematt.github.io/
 | Day 3 | Core Application Structure (HTML, CSS, etc.) | Complete
 | Day 4 | MVP & Bug Fixes | Complete
 | Day 5 | Final Touches & PostMVP | Complete
-| Day 6 | Present | Incomplete
+| Day 6 | Present | Complete
 
 ### Project Decription
 Create a personal Portfolio site that has a hamburger menu that follows the user down the page. Having the opening page have an animated pc with code continuously looping. Travel/Outdoor themed. *edit top menu follows user
